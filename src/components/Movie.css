@@ -2,16 +2,24 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 50px;
   padding-top: 70px;
-  width: 85%;
+  padding-left: 120px;
+  width: 90%;
+}
+
+.movies a {
+  width: 45%;
+  min-width: 480px;
+  margin-bottom: 70px;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .movies .movie {
-  width: 47%;
-  min-width: 500px;
+  width: 100%;
+  height: 100%;
   background-color: white;
-  margin-bottom: 70px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -42,10 +50,6 @@
 .movie .movie__summary {
   margin: 0px;
   margin-top: 10px;
-  /* display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 5;
-      overflow: hidden; */
 }
 
 .movie .movie__genres,
@@ -64,8 +68,23 @@
 .movie__genres li {
   margin: 5px;
   font-size: 14px;
-  /* display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 1;
-      overflow: hidden; */
+}
+
+@media screen and (max-width: 1199px) {
+  .movies {
+    padding-top: 40px;
+    justify-content: center;
+  }
+  .movies a {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .movies {
+    padding-left: 0px;
+  }
+  .movie a {
+    width: 100%;
+  }
 }
