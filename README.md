@@ -7,6 +7,8 @@
 2. 크기에 따라 바뀌는 페이지 지원
 
 ## 사진
+![스크린샷 2021-03-22 오전 12 19 19](https://user-images.githubusercontent.com/78836615/111910340-51686d80-8aa4-11eb-9eca-8ca6bd0e3a3f.png)
+![스크린샷 2021-03-22 오전 12 18 45](https://user-images.githubusercontent.com/78836615/111910342-54635e00-8aa4-11eb-861a-bbe0c117efd5.png)
 
 
 #### 참조
