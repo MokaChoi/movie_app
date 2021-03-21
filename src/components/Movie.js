@@ -4,6 +4,13 @@ import "./Movie.css";
 import { Link } from "react-router-dom";
 
 function Movie({ id, year, title, summary, poster, genres }) {
+  let index_genres = genres.slice();
+  if (index_genres.length > 3) {
+    index_genres = index_genres.slice(0, 3);
+    index_genres.push("...");
+  } else {
+    index_genres = genres.slice();
+  }
   return (
     <Link
       to={{
@@ -23,7 +30,7 @@ function Movie({ id, year, title, summary, poster, genres }) {
           <h3 className="movie__title">{title}</h3>
           <h5 className="movie__year">{year}</h5>
           <ul className="movie__genres">
-            {genres.map((genre, index) => {
+            {index_genres.map((genre, index) => {
               return <li key={index}>{genre}</li>;
             })}
           </ul>

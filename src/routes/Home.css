@@ -13,6 +13,10 @@ html,
 #root,
 .container {
   height: 100%;
+}
+
+#root,
+.container {
   display: flex;
   justify-content: center;
 }
@@ -29,5 +33,6 @@ html,
 @media screen and (max-width: 660px) {
   #root {
     display: block;
+    justify-content: space-between;
   }
 }
